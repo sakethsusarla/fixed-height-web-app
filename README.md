@@ -150,7 +150,7 @@ Style matters. To visualize what we've done so far, add the following styles,
 
   ```
 
-That's it! Our fixed-height web application is ready and should something like this,
+That's it! Our fixed-height web application is ready and should look something like this,
 
 <img src="./src/assets/fixed-height-web-app-landscape-screenshot.png" style="max-height: 400px;" />
 
