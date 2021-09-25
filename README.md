@@ -2,7 +2,7 @@
 
 ## Goal
 
-In this article, I will be showing you how you could achieve a fixed height web application (which is usually the requirement for dashboard applications) using a library called [angular-split](https://angular-split.github.io/).
+In this article, I will be showing you how you can achieve a fixed height web application (which is usually the requirement for dashboard applications) using a library called [angular-split](https://angular-split.github.io/).
 
 ## Pre-requisites
 
@@ -11,7 +11,7 @@ Before you consider going ahead with a fixed height web application, it's good t
 - List of resolutions you intend to support
 - Layout for your content for all the supported resolutions
 
-Wireframes can help you decide what resolutions you want to support and how you could arrange your content in the available space; optional but helpful if you have multiple developers working on a project and during discussions with different stakeholders in a project.
+Wireframes can help you decide what resolutions you want to support and how you could arrange your content in the available space; optional but helpful if you have multiple developers working on a project or during discussions with different stakeholders in a project.
 
 [Draw.io](https://draw.io/) is a great tool to create wireframes. Alright, I'll leave it at that. Now, let's dive into some code.
 
@@ -76,7 +76,7 @@ export class AppComponent {
     ...
 ```
 
-With the above code, we have created a parent container for our page's content. Angular Split lets us create resizable areas (with the help of a draggable splitter control) within our container. I'm not going to cover that in this article. To know more about the various features **angular-split** has to offer, check out the examples section of their [website](https://angular-split.github.io/).
+With the above code, we have created a parent container for the content of our page. Angular Split lets us create resizable areas (with the help of a draggable splitter control) within our container. I'm not going to cover that in this article. To know more about the various features **angular-split** has to offer, check out the examples section of their [website](https://angular-split.github.io/).
 
 - We disable resizing by default by setting _isSplitDisabled_ to **true** and binding it to the _disabled_ property of **as-split** as shown in _app.component.html_.
 
@@ -131,7 +131,7 @@ export class AppComponent {
 
 Style matters. To visualize what we've done so far, add the following styles,
 
-> **Note:** Basing on the stylesheet format you've chosen during the initial setup, your stylesheet extension could change. If you went with the defaults, you would end up with a _style.css_ and an _app.component.css_ file.
+> **Note:** Basing on the stylesheet format you've chosen during the initial setup, your stylesheet extension could change. If you had chosen to go with the defaults, you would end up with a _style.css_ and an _app.component.css_ file.
 
 - styles.scss
 
@@ -179,7 +179,7 @@ private computeLayout() {
 }
 ```
 
-We would need to invoke the _computeLayout_ method whenever a window resize happens. To do that, we will need to listen to the window resize events. Add the following to our _AppComponent_ (in the _app.component.ts_ file).
+We need to invoke the _computeLayout_ method whenever a window resize happens. To do that, we need to listen to the window resize events. Add the following to our _AppComponent_ (in the _app.component.ts_ file).
 
 ```
 export class AppComponent implements OnInit, OnDestroy {
@@ -236,4 +236,4 @@ Restricting the height of an application comes with its challenges. You might en
 
 This is my first article (first of many); I'm looking for some feedback. So, please do let me know if you think there should be less of one thing, more of another, or, even if you just liked it!
 
-In one of my following articles, I will cover how you could achieve the same by writing your own Angular directive. Until then, happy coding! 🙂
+In one of my articles that will follow, I wish to cover how one could achieve the same by writing a custom Angular directive. Until then, happy coding! 🙂
