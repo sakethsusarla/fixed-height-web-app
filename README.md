@@ -86,7 +86,7 @@ With the above code, we have created a parent container for our page's content. 
 
 - The _unit_ property is set to _percent_ as we want to provide sizes in percentages.
 
-Now, let's give this parent some children. Add the following to your _app.component.html_,
+Now, let's give this parent container some child elements. Add the following to your _app.component.html_,
 
 ```
 <as-split
