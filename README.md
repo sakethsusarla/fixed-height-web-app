@@ -222,7 +222,7 @@ as-split-area {
 }
 ```
 
-Voila! Our layout is dynamic now. If we changed to portrait mode, our page would like this (and there's no scroll bar!),
+Voila! Our layout is dynamic now. If we changed to portrait mode, our page would look like this (and there's no scroll bar!),
 
 <img src="./src/assets/fixed-height-web-app-portrait-screenshot.png" style="max-height: 400px;" />
 
