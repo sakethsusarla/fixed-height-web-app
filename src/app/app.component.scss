@@ -1,0 +1,9 @@
+as-split-area {
+  background: linear-gradient(to bottom, #fc5c7d, #6a82fb);
+}
+
+@media (orientation: portrait) {
+  as-split-area {
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  }
+}
