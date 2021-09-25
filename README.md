@@ -1,4 +1,4 @@
-# Fixed Height Web Application using Angular Split (The Easy Way)
+# Scroll-free Web Applications using Angular Split (The Easy Way)
 
 ## Goal
 
